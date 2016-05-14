@@ -5,7 +5,7 @@ Home: http://pypi.python.org/pypi/oceans/
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Misc functions for oceanographic data analysis
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/oceans-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/oceans-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/oceans-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/oceans-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/oceans-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/oceans-feedstock/branch/master)
