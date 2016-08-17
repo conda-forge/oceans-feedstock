@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
     name: oceans
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: oceans-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/o/oceans/oceans-{{ version }}.tar.gz
-    md5: f8a7f628fcfffeafe5465eabc2e33400
+    url: https://github.com/pyoceans/python-oceans/archive/v{{ version }}.tar.gz
+    sha256: 163370ae480bfc112c61848dc4b667caa347d92e16d0ff6ef296b62c40f62c3a
 
 build:
     number: 0
@@ -36,7 +36,7 @@ test:
 about:
     home: http://pypi.python.org/pypi/oceans/
     license: MIT
-    summary: Misc functions for oceanographic data analysis
+    summary: 'Misc functions for oceanographic data analysis.'
 
 extra:
     recipe-maintainers:
