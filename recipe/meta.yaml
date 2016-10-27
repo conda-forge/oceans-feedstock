@@ -1,43 +1,43 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
-    name: oceans
-    version: {{ version }}
+  name: oceans
+  version: {{ version }}
 
 source:
-    fn: oceans-{{ version }}.tar.gz
-    url: https://github.com/pyoceans/python-oceans/archive/v{{ version }}.tar.gz
-    sha256: 163370ae480bfc112c61848dc4b667caa347d92e16d0ff6ef296b62c40f62c3a
+  fn: oceans-{{ version }}.tar.gz
+  url: https://github.com/pyoceans/python-oceans/archive/v{{ version }}.tar.gz
+  sha256: ba085af687170f793ab142fc1920d26389c8c1ae515ffbba11e3d34bb0a0a47b
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed  --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed  --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numpy
-        - scipy
-        - matplotlib
-        - pandas
-        - gsw
-        - seawater
-        - shapely
-        - netcdf4
-        - ctd
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - pandas
+    - gsw
+    - seawater
+    - shapely
+    - netcdf4
+    - ctd
 
 test:
-    imports:
-        - oceans
+  imports:
+    - oceans
 
 about:
-    home: http://pypi.python.org/pypi/oceans/
-    license: MIT
-    summary: 'Misc functions for oceanographic data analysis.'
+  home: http://pypi.python.org/pypi/oceans/
+  license: BSD 3-Clause
+  summary: 'Misc functions for oceanographic data analysis.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
