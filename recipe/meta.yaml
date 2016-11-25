@@ -34,7 +34,7 @@ test:
     - oceans
 
 about:
-  home: http://pypi.python.org/pypi/oceans/
+  home: https://github.com/pyoceans/python-oceans
   license: BSD 3-Clause
   summary: 'Misc functions for oceanographic data analysis.'
 

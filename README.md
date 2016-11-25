@@ -1,7 +1,7 @@
 About oceans
 ============
 
-Home: http://pypi.python.org/pypi/oceans/
+Home: https://github.com/pyoceans/python-oceans
 
 Package license: BSD 3-Clause
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `oceans` available on your platfor
 ```
 conda search oceans --channel conda-forge
 ```
-
 
 
 About conda-forge
