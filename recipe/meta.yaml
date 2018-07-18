@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: oceans
@@ -7,7 +7,7 @@ package:
 source:
   fn: oceans-{{ version }}.tar.gz
   url: https://github.com/pyoceans/python-oceans/archive/v{{ version }}.tar.gz
-  sha256: ba085af687170f793ab142fc1920d26389c8c1ae515ffbba11e3d34bb0a0a47b
+  sha256: 7950d87343881eb45c576ddd4cb56cf2f9ca130d8c8f0820f5ecf80251bd5d45
 
 build:
   number: 0
