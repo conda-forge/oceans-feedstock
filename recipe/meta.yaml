@@ -1,24 +1,24 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: oceans
   version: {{ version }}
 
 source:
-  fn: oceans-{{ version }}.tar.gz
-  url: https://github.com/pyoceans/python-oceans/archive/v{{ version }}.tar.gz
-  sha256: ba085af687170f793ab142fc1920d26389c8c1ae515ffbba11e3d34bb0a0a47b
+  url: https://pypi.io/packages/source/o/oceans/oceans-{{ version }}.tar.gz
+  sha256: a74331451b0c496851ffc6efdfcde7cce19ce188cfb3e611d948395273a76b1a
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed  --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     - matplotlib
@@ -36,6 +36,7 @@ test:
 about:
   home: https://github.com/pyoceans/python-oceans
   license: BSD 3-Clause
+  license_file: LICENSE.txt
   summary: 'Misc functions for oceanographic data analysis.'
 
 extra:
