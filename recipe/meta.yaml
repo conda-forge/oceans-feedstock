@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
   build:
@@ -37,7 +37,7 @@ about:
   home: https://github.com/pyoceans/python-oceans
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Misc functions for oceanographic data analysis.'
+  summary: 'Misc functions for oceanographic data analysis'
 
 extra:
   recipe-maintainers:
