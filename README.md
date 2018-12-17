@@ -1,13 +1,15 @@
 About oceans
 ============
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://github.com/pyoceans/python-oceans
 
 Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Misc functions for oceanographic data analysis.
+Summary: Misc functions for oceanographic data analysis
 
 
 
@@ -103,3 +105,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@ocefpaf](https://github.com/ocefpaf/)
+
