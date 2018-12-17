@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: oceans
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/oceans/oceans-{{ version }}.tar.gz
-  sha256: 53c255f8f0eaec7c27f48ed99d70a3c143f1daf14eb473b27035e115bb990eb1
+  sha256: cc071c8b0bf5e6ce3f875b93d62c658926c2d710bece5fead1253bc9cb68e8b0
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
