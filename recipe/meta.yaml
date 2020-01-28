@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: oceans
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/oceans/oceans-{{ version }}.tar.gz
-  sha256: cc071c8b0bf5e6ce3f875b93d62c658926c2d710bece5fead1253bc9cb68e8b0
+  sha256: de37f4227943ed69220a823f0d6e3ddadbee84385ac5c570efe58b4e88b7c1cf
 
 build:
   number: 0
