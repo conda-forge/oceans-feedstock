@@ -9,7 +9,7 @@ source:
   sha256: de37f4227943ed69220a823f0d6e3ddadbee84385ac5c570efe58b4e88b7c1cf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - pandas
     - gsw
     - seawater
