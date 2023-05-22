@@ -28,8 +28,9 @@ requirements:
     - matplotlib-base >=3.6
     - numpy >=1.20
     - pandas >=1.0.1
-    - scipy
     - seawater
+    # optional
+    - scipy
     - shapely
     - netcdf4
     - ctd
