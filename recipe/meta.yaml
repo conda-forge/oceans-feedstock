@@ -1,5 +1,5 @@
 {% set name = "oceans" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oceans-{{ version }}.tar.gz
-  sha256: c52d94a91b46418a81667011e01d39da36150fb828c64ff0d58be88d29586d19
+  sha256: cb06da6c5ebdffa0dbe9ea7343fcd0913cd2fa39196a10fb91f64fa1c148780f
 
 build:
   noarch: python
