@@ -1,5 +1,5 @@
 {% set name = "oceans" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oceans-{{ version }}.tar.gz
-  sha256: cb06da6c5ebdffa0dbe9ea7343fcd0913cd2fa39196a10fb91f64fa1c148780f
+  sha256: 1fcaa75590c7aea3e2c7e73f5f5ee1e34cf69ed7c6cc7df9807bc38e80dc9f1e
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - cmcrameri
     - contourpy
     - gsw
-    - matplotlib-base >=3.6
+    - matplotlib-base >=3.6.0
     - numpy >=1.20
     - pandas >=1.0.1
     - seawater
