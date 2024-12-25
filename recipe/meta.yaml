@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oceans-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oceans-{{ version }}.tar.gz
   sha256: c578e6c6bce5f31cbd16d6bfa4b6f74c31dc13f0c5cb57cf5ef179557daa4d79
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=42
     - setuptools-scm >=3.4
     - wheel
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - cmcrameri
     - contourpy
     - gsw
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyoceans/python-oceans
