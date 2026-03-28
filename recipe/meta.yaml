@@ -1,5 +1,5 @@
 {% set name = "oceans" %}
-{% set version = "1.1.4" %}
+{% set version = "1.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oceans-{{ version }}.tar.gz
-  sha256: c578e6c6bce5f31cbd16d6bfa4b6f74c31dc13f0c5cb57cf5ef179557daa4d79
+  sha256: 479085a07f0a245591e1884b4413171c810bbebb6f4c46787ad4f6306519bb7e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
