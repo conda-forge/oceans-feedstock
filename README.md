@@ -3,7 +3,7 @@ About oceans-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oceans-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pyoceans/python-oceans
+Home: https://pypi.org/project/oceans/
 
 Package license: BSD-3-Clause
 
